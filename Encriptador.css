@@ -1,0 +1,12 @@
+const encriptar = document.getElementById('encriptar');
+const desencriptar = document.getElementById('desencriptar');
+const texto = document.getElementById('texto');
+const resultado = document.getElementById('resultado');
+
+encriptar.addEventListener('click', () => {
+  resultado.value = btoa(texto.value);
+});
+
+desencriptar.addEventListener('click', () => {
+  resultado.value = atob(texto.value);
+});
